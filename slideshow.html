@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 2 Slideshow</title>
+<link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Week 2 slideshow.</h1>
+        <h2>Please use the arrows and the dots to navigate through the slides.</h2>
+        <h3>Brought to you by Bernard Clark</h3>
+    </header>
+
+    <main>
+        <!--The class "slideshow-container" holds information such as slide numbers, slide names, and images.-->
+        <div class="slideshow-container">
+        <!--The class "mySlides fade" allows the slides to fade in and out of one another.-->
+        <div class="mySlides fade">
+            <!--The class numbertext holds page/slide numbers.-->
+        <div class="numbertext">1 / 7</div>
+        <!--This is one of the images within the slideshow.-->
+        <img src="./images/img_nature_wide.jpg" style="width:100%">
+        <!--The class text display the text/title of the slide.-->
+        <div class="text">Sunset Cliff</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+        <img src="./images/img_snow_wide.jpg" style="width:100%">
+        <div class="text">Snowy Mountains</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+        <img src="./images/img_mountains_wide.jpg" style="width:100%">
+        <div class="text">Mountain Road</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="./images/img_woods_wide.jpg" style="width:100%">
+            <div class="text">Midday Forest</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="./images/img_lights_wide.jpg" style="width:100%">
+            <div class="text">Northern Lights</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="./images/img_5terre_wide.jpg" style="width:100%">
+            <div class="text">Cliffside Village</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="./images/img_grassland_wide.jpg" style="width:100%">
+            <div class="text">Foreign Land</div>
+        </div>
+
+        <!--These are the previous and nexr buttons which are shown as foreward and back arrows.-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <!--The dots are also an option, besides the arrows, to help flip pages from image to image.-->
+        <!--Click on a dot to choose an image to view.-->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        </div>
+    </main>
+
+    <script src="slideshow.js"></script>
+
+</body>
+</html> 
